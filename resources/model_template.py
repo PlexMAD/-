@@ -51,5 +51,5 @@ print("Слова, похожие на 'направление':", similar_words
 model.save("model_university_topic.model")
 
 # Пример нахождения наиболее похожего слова
-most_similar = model.wv.most_similar_to_given("обучение", ["направление", "преподаватель"])
-print("Наиболее похожее слово на 'обучение' среди ['направление', 'преподаватель']:", most_similar)
+most_similar = model.wv.most_similar_to_given("специальность", ["направление", "студент"])
+print("Наиболее похожее слово на 'специальность' среди ['направление', 'студент']:", most_similar)
